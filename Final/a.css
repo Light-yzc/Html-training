@@ -1,0 +1,38 @@
+body {
+  
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: linear-gradient(145deg, #2c3e50, #27ae60, #2980b9, #e74c3c, #8e44ad);
+    background-size: 500%;
+    animation-name: example;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+h1{
+    color: white;
+    letter-spacing: 5px;
+    line-height:80vh;
+}
+p{
+    color:darkgray;
+    font-size: 7px;
+    text-align: center;
+    /*line-height: 100vh;*/
+}
+
+@keyframes example {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 50% 100%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
